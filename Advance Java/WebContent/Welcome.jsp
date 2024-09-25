@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%@include file=  "Header.jsp" %>
+<hr>
+
 	<div align="center">
 		<h1>Welcome to Dynamic Web Project</h1>
 	</div>

@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%@ include file="Header.jsp" %>
+<hr>
 	<form action="LoginCtl" method="post">
 		<div align="center">
 			<%

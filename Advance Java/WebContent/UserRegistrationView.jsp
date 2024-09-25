@@ -9,38 +9,55 @@
 <body>
 	<%@ include file="Header.jsp"%>
 	<form action="UserRegistrationCtl" method="post">
-		<table>
-			<tr>
+		<div align="center">
 
-				<th>First Name:</th>
-				<td><input type="text" name="firstName"></td>
-			</tr>
+			<%
+				String msg = (String) request.getAttribute("msg");
+			%>
+<h1>User Registration</h1>
+			<%
+				if (msg != null) {
+			%>
+			<font color="green"> <%=msg%> 
+			
+			<%
+ 	}
+ %>
 
-			<tr>
-				<th>Last Name:</th>
-				<td><input type="text" name="lastName"></td>
-			</tr>
-			<tr>
-				<th>Login Id:</th>
-				<td><input type="text" name="loginId"></td>
-			</tr>
-			<tr>
-				<th>Password:</th>
-				<td><input type="text" name="password"></td>
-			</tr>
-			<tr>
-				<th>DOB:</th>
-				<td><input type="date" name="dob"></td>
-			</tr>
-			<tr>
-				<th>Address:</th>
-				<td><input type="text" name="address"></td>
-			</tr>
-			<tr>
-				<th></th>
-				<td><input type="submit" value="signup"></td>
-			</tr>
-		</table>
+			</font>
+			<table>
+				<tr>
+
+					<th>First Name:</th>
+					<td><input type="text" name="firstName"></td>
+				</tr>
+
+				<tr>
+					<th>Last Name:</th>
+					<td><input type="text" name="lastName"></td>
+				</tr>
+				<tr>
+					<th>Login Id:</th>
+					<td><input type="text" name="loginId"></td>
+				</tr>
+				<tr>
+					<th>Password:</th>
+					<td><input type="text" name="password"></td>
+				</tr>
+				<tr>
+					<th>DOB:</th>
+					<td><input type="date" name="dob"></td>
+				</tr>
+				<tr>
+					<th>Address:</th>
+					<td><input type="text" name="address"></td>
+				</tr>
+				<tr>
+					<th></th>
+					<td><input type="submit" value="signup"></td>
+				</tr>
+				</div>
+			</table>
 	</form>
 
 </body>
